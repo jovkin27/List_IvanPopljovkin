@@ -39,21 +39,62 @@
 #list2.insert(2,round(answer))
 #print(list2)
 
-#Задание 4
-user_list=[]
-numbrid=int(input('Kirjutage mitu numbrid '))
-for i in range(0,numbrid):
-    j=int(input())
-    user_list.append(j) 
-print('Loendi sortimine kahanevas järjekorras[1] või tõusvas järjestuses[2]')
-qs=int(input('->'))
-if qs==1:
-    user_list.sort()
-    user_list.reverse()
-    print(user_list)
-if qs==2:
-    user_list.sort()
-    print(user_list)
-else:
-    print('Error')
+##Задание 4
+#user_list=[]
+#numbrid=int(input('Kirjutage mitu numbrid '))
+#for i in range(0,numbrid):
+#    j=int(input())
+#    user_list.append(j) 
+#print('Loendi sortimine kahanevas järjekorras[1] või tõusvas järjestuses[2]')
+#qs=int(input('->'))
+#if qs==1:
+#    user_list.sort()
+#    user_list.reverse()
+#    print(user_list)
+#if qs==2:
+#    user_list.sort()
+#    print(user_list)
+#else:
+#    print('Error')
+
+#Задание 5
+a=['крот', 'белка', 'выхухоль']
+b=['a', 'aa', 'aaa', 'aaaa', 'aaaaa']
+c=['qweasdqweas', 'q', 'rteww', 'ewqqqqq']
+
+#a_max=len(max(a, key=len))
+#a0=len(a[0])
+#s=a_max-a0
+#g=a[0]
+#for i in range(s):
+#    if len(a[0])<a_max:
+#       g+='_'
+#    if a[0]==a_max:break
+#a.pop(0)
+#a.insert(0,g)
+
+#a1=len(a[1])
+#s=a_max-a1
+#g=a[1]
+#for i in range(s):
+#    if len(a[1])<a_max:
+#       g+='_'
+#    if a[1]==a_max:break
+#a.pop(1)
+#a.insert(1,g)
+#print(a)
+
+b_max=len(max(b, key=len))
+b0=len(b[0])
+b1=len(b[1])
+b2=len(b[2])
+b3=len(b[3])
+for b in range(b_max):
+    if b0<b_max and b1<b_max and b2<b_max and b3<b_max :
+       b[0]+='_'
+       b[1]+='_'
+       b[2]+='_'
+       b[3]+='_'
+    if len(b[0])==len(b[1])==len(b[2])==len(b[3])==b_max:break
+print(b)
 
