@@ -1,4 +1,19 @@
-﻿##Задание 2
+﻿#Задание 1
+#linn=["Tallinn","Narva, Narva-Jõesuu","Kohtla-Järve","Ida-Virumaa, Lääne-Virumaa, Jõgevamaa","Tartu linn","Tartumaa, Põlvamaa, Võrumaa, Valgamaa", "Viljandimaa, Järvamaa, Harjumaa,","Raplamaa","Pärnumaa","Läänemaa, Hiiumaa, Saaremaa"]
+#index=""
+#n=0
+#while type(index)!=int or n!=5:
+#    try:
+#        index=int(input("Sisesta index> "))
+#        n=len(str(index))
+#    except:
+#        print("Vale index!")
+
+#index_list=list(str(index)) 
+#index_list[0]
+#print(linn[int(index_list[0])-1])
+
+##Задание 2
 #list1=[123, 'list', 'Ivan', 27, 228, 1337]
 #print(list1)
 #print("Valige!Mitu elementid soovib muuta?")
@@ -84,17 +99,29 @@ c=['qweasdqweas', 'q', 'rteww', 'ewqqqqq']
 #a.insert(1,g)
 #print(a)
 
-b_max=len(max(b, key=len))
-b0=len(b[0])
-b1=len(b[1])
-b2=len(b[2])
-b3=len(b[3])
-for b in range(b_max):
-    if b0<b_max and b1<b_max and b2<b_max and b3<b_max :
-       b[0]+='_'
-       b[1]+='_'
-       b[2]+='_'
-       b[3]+='_'
-    if len(b[0])==len(b[1])==len(b[2])==len(b[3])==b_max:break
-print(b)
+#b_max=len(max(b, key=len))
+#b0=len(b[0])
+#b1=len(b[1])
+#b2=len(b[2])
+#b3=len(b[3])
+#for i in range(b_max):
+#    if b0<b_max and b1<b_max and b2<b_max and b3<b_max :
+#       b[0]+='_'
+#       b[1]+='_'
+#       b[2]+='_'
+#       b[3]+='_'
+#    if len(b[0])==len(b[1])==len(b[2])==len(b[3])==b_max:break
+#print(b)
 
+#Задание 6
+nimi=input('Nimi->')
+a=nimi[0].upper()
+b=nimi[1::]
+name=a+b
+print(f"Tere tulemast {name}")
+pik=len(nimi)
+print(f'Sinu nimis on {pik} tähted')
+nimi_list=(list(nimi))
+nimi_list.sort()
+c=nimi_list
+print(c)
