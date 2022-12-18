@@ -125,3 +125,4 @@ nimi_list=(list(nimi))
 nimi_list.sort()
 c=nimi_list
 print(c)
+#не понял
